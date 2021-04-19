@@ -1,12 +1,19 @@
+// const logoActive = () => {
+//     const logo = document.querySelector('.logo a h1');
+//     logo.addEventListener('click', () => {
+//         logo.style.color = 'rgb(4, 228, 209)';
+//         console.log("white");
+//     });
+// }
+
 const navSlide = () => {
     const min = document.querySelector('.min');
     const menu = document.querySelector('.menu');
     const items = document.querySelectorAll('.menu li');
-
+   
     // Toggle nav
     min.addEventListener('click', () => {
         menu.classList.toggle('menu-active');
-
         // Animate nav links
         items.forEach((link, index)=>{
         if(link.style.animation){
@@ -20,11 +27,11 @@ const navSlide = () => {
         // min animation
         min.classList.toggle('toggle');
     });
-
     
 }
 
 const app = () =>{
+    // logoActive();
     navSlide();
 }
 

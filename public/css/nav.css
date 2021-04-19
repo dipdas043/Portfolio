@@ -21,7 +21,10 @@
     cursor: pointer;
     font-family: 'Akaya Kanadaka', cursive;
 }
-.logo h1{
+.logo a{
+    text-decoration: none;
+}
+.logo a h1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +32,6 @@
     letter-spacing: 10px;
     color: rgb(168, 228, 4);
 }
-
 .min{
     background: linear-gradient(to right top,#76b3b3,#d6250d );
     display: none;
@@ -70,9 +72,23 @@
     color: rgba(223, 247, 9, 0.904);
 }
 
+/* Toggle to dark mode  */
+.toggle_mode{
+    position: relative;
+    right: 6%;
+}
+.dark_mode {
+    background-color: black;
+    color: white;
+  }
+
 @media screen and (max-width: 577px){
     body{
         overflow-x: hidden;
+    }
+    .toggle_mode{
+        position: relative;
+        right: 0%;
     }
     .menu{
             position: absolute;
@@ -93,6 +109,7 @@
     .min{
         display: block;
        }
+    
 }
 
 .menu-active{

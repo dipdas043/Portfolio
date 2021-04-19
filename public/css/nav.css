@@ -72,15 +72,7 @@
     color: rgba(223, 247, 9, 0.904);
 }
 
-/* Toggle to dark mode  */
-.toggle_mode{
-    position: relative;
-    right: 6%;
-}
-.dark_mode {
-    background-color: black;
-    color: white;
-  }
+
 
 @media screen and (max-width: 577px){
     body{
@@ -94,7 +86,7 @@
             position: absolute;
             right: 0;
             height: 92vh;
-            top: 6vh;
+            top: 8vh;
             background: linear-gradient(to right top,#76b3b3,#d6250d );
             display: flex;
             flex-direction: column;
@@ -111,6 +103,8 @@
        }
     
 }
+
+
 
 .menu-active{
     transform: translateX(0%);
